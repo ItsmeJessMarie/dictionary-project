@@ -6,8 +6,12 @@ export default function Results(props) {
     return (
       <div className="Results">
         <h2>{props.results[0].word}</h2>
-        {props.results.meanings[0].map(function (meaning, index) {
-          return meaning.definitions[0].definition;
+        {props.results[0].meanings.map(function (meaning, index) {
+          return (
+            <div key={index}>
+              <Meaning meaning={meaning} />
+            </div>
+          );
         })}
       </div>
     );
