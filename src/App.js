@@ -14,13 +14,13 @@ export default function App() {
         </main>
         <footer className="App-footer">
           <small>
-            This project was built by Jessica Boll and is open sourced on{" "}
+            This project was built by Jessica Boll and is{" "}
             <a
               href="https://github.com/ItsmeJessMarie/dictionary-project"
               target="_blank"
               rel="noreferrer noopener"
             >
-              Github
+              open sourced on Github
             </a>
           </small>
         </footer>
