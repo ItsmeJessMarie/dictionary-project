@@ -1,9 +1,0 @@
-.phoneticText {
-  margin: 10px 0 0 22px;
-}
-
-@media (max-width: 576px) {
-  .phoneticText {
-    margin: 0;
-  }
-}
