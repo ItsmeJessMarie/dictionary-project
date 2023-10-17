@@ -2,11 +2,13 @@
   font-size: 36px;
   font-weight: bold;
   line-height: 1.5;
+  text-transform: capitalize;
 }
 
 .Results h4 {
   font-size: 24px;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 @media (max-width: 576px) {

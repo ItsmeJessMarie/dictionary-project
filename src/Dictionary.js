@@ -52,7 +52,7 @@ export default function Dictionary(props) {
             <input
               type="search"
               onChange={handleKeywordChange}
-              placeholder="dictionary"
+              placeholder="Dictionary"
             />
           </form>
           <div className="hint">

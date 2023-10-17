@@ -14,7 +14,15 @@ export default function App() {
           <Dictionary defaultKeyword="dictionary" />
         </main>
         <footer className="App-footer">
-          This project was built by Jessica Boll and is{" "}
+          This project was built by{" "}
+          <a
+            href="https://www.shecodes.io/graduates/77936-jessica-boll"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Jessica Boll
+          </a>{" "}
+          and is{" "}
           <a
             href="https://github.com/ItsmeJessMarie/dictionary-project"
             target="_blank"
