@@ -1,0 +1,16 @@
+.Synonyms {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #719192;
+}
+
+.Synonyms li {
+  display: inline;
+  padding-right: 30px;
+}
+
+@media (max-width: 576px) {
+  .Synonyms li {
+    padding-right: 10px;
+  }
+}
