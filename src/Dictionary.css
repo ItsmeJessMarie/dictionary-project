@@ -2,9 +2,9 @@
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
   margin: 20px auto;
-  border-radius: 8px;
+  border-radius: 6px;
   box-shadow: 0 8px 8px rgb(0 0 0 / 10%);
-  width: 750px;
+  width: 800px;
 }
 
 .Dictionary input {
@@ -13,7 +13,7 @@
   width: 100%;
   padding: 6px 8px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .Dictionary p {
@@ -27,9 +27,9 @@
   margin: 5px 0 0 3px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .Dictionary section {
-    width: 100%;
+    width: 90%;
   }
 }
 
