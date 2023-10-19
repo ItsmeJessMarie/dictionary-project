@@ -9,9 +9,21 @@ export default function Dictionary(props) {
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
+  let [error, setError] = useState(null);
 
   function handleDictionaryResponse(response) {
-    setResults(response.data);
+    if (response.data.meanings) {
+      setError(null);
+      setResults(response.data);
+    } else {
+      setError(
+        <em>
+          <strong>
+            <center>Sorry, we do not have a definition for that word!</center>
+          </strong>
+        </em>
+      );
+    }
   }
 
   function handleImagesResponse(response) {
@@ -59,8 +71,14 @@ export default function Dictionary(props) {
             suggested words: sunset, elephant, yoga, plant...
           </div>
         </section>
-        <Results results={results} />
-        <Photos results={photos} />
+        {!error ? (
+          <>
+            <Results results={results} />
+            <Photos results={photos} />
+          </>
+        ) : (
+          <>{error}</>
+        )}
       </div>
     );
   } else {

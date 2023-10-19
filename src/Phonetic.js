@@ -1,6 +1,8 @@
 /*import React from "react";
 import "./Phonetic.css";
 
+// Documentation: https://dictionaryapi.dev/
+
 export default function Phonetic(props) {
   if (props.phonetic.audio) {
     return (
